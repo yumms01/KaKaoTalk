@@ -21,6 +21,7 @@ public class WH_Tab1Fragment extends Fragment {
 
     ListView listView;
     Friend_Adapter mAdapter;
+
     static final int[] ICON_IDS = {R.drawable.sample_thumb_0,
             R.drawable.sample_thumb_1,
             R.drawable.sample_thumb_2,
@@ -86,11 +87,11 @@ public class WH_Tab1Fragment extends Fragment {
         }
     }
 
-//    @Override
-//    public void setUserVisibleHint(boolean isVisibleToUser) {
-//        super.setUserVisibleHint(isVisibleToUser);
-//        if (isVisibleToUser) {
-//            getActivity().setTitle("친구");
-//        }
-//    }
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            getActivity().setTitle("친구");
+        }
+    }
 }

@@ -26,11 +26,11 @@ public class WH_Tab4Fragment extends Fragment {
         return inflater.inflate(R.layout.wh_fragment_tab4, container, false);
     }
 
-//    @Override
-//    public void setUserVisibleHint(boolean isVisibleToUser) {
-//        super.setUserVisibleHint(isVisibleToUser);
-//        if (isVisibleToUser) {
-//            getActivity().setTitle("더보기");
-//        }
-//    }
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            getActivity().setTitle("더보기");
+        }
+    }
 }

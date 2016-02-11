@@ -1,6 +1,7 @@
 package com.example.tacademy.kakaotalk;
 
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,6 +31,7 @@ public class WH_Tab2Fragment extends Fragment {
             R.drawable.sample_thumb_6,
             R.drawable.sample_thumb_7
     };
+    private static final int REQUEST_CODE_OTHER = 0;
 
     public WH_Tab2Fragment() {
         // Required empty public constructor
@@ -50,6 +52,8 @@ public class WH_Tab2Fragment extends Fragment {
         mAdapter.setOnAdapterItemClickListener(new Chatting_Adapter.OnAdapterItemClickListener(){
             @Override
             public void onAdapterItemClickListener(Chatting_Adapter adapter, Chatting_View view, Chatting chatting, int position) {
+//                Intent intent = new Intent(getContext(), Chatting_MainActivity.class);
+//                startActivityForResult(intent, REQUEST_CODE_OTHER);
                 Toast.makeText(getContext(), "ImageClick : " + chatting.getName(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -86,13 +90,13 @@ public class WH_Tab2Fragment extends Fragment {
         }
     }
 
-//    @Override
-//    public void setUserVisibleHint(boolean isVisibleToUser) {
-//        super.setUserVisibleHint(isVisibleToUser);
-//        if (isVisibleToUser) {
-//            getActivity().setTitle("채팅");
-//        }
-//    }
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        if (isVisibleToUser) {
+            getActivity().setTitle("채팅");
+        }
+    }
 
 
 }

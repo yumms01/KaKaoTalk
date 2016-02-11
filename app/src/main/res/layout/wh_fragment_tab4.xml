@@ -1,16 +1,171 @@
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WH_Tab4Fragment">
+    tools:context=".WH_Tab4Fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:columnCount="4"
+        app:orientation="horizontal"
+        android:id="@+id/android.support.v7.widget.GridLayout"
+        android:background="#e5e5e5">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:background="@drawable/image_1"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_2"
+            android:background="@drawable/image_2"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_3"
+            android:background="@drawable/image_3"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_4"
+            android:background="@drawable/image_4"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_5"
+            android:background="@drawable/image_5"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_6"
+            android:background="@drawable/image_6"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_7"
+            android:background="@drawable/image_7"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_8"
+            android:background="@drawable/image_8"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_9"
+            android:background="@drawable/image_9"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_10"
+            android:background="@drawable/image_10"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_11"
+            android:background="@drawable/image_11"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_12"
+            android:background="@drawable/image_12"
+            app:layout_columnWeight = "1"
+            app:layout_rowWeight="1"/>
+    </android.support.v7.widget.GridLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
-        android:layout_row="0"
-        android:layout_column="0" />
-</GridLayout>
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/android.support.v7.widget.GridLayout"
+        android:id="@+id/RelativeLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="카카오 추천앱"
+            android:id="@+id/textView"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/image_all"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:columnCount="4">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_a"
+            android:background="@mipmap/ic_launcher"
+            app:layout_columnWeight = "1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_b"
+            android:background="@mipmap/ic_launcher"
+            app:layout_columnWeight = "1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_c"
+            android:background="@mipmap/ic_launcher"
+            app:layout_columnWeight = "1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_d"
+            android:background="@mipmap/ic_launcher"
+            app:layout_columnWeight = "1"/>
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>
