@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
         tab_mAdapter = new WH_TabsAdapter(this, getSupportFragmentManager(), tabHost, pager);
 
-        tab_mAdapter.addTab(tabHost.newTabSpec("tab1").setIndicator("", getResources().getDrawable(R.drawable.tab_1)), WH_Tab1Fragment.class, null);
-        tab_mAdapter.addTab(tabHost.newTabSpec("tab2").setIndicator("", getResources().getDrawable(R.drawable.tab_2)), WH_Tab2Fragment.class, null);
-        tab_mAdapter.addTab(tabHost.newTabSpec("tab3").setIndicator("", getResources().getDrawable(R.drawable.tab_3)), WH_Tab3Fragment.class, null);
-        tab_mAdapter.addTab(tabHost.newTabSpec("tab4").setIndicator("", getResources().getDrawable(R.drawable.tab_4)), WH_Tab4Fragment.class, null);
+        tab_mAdapter.addTab(tabHost.newTabSpec("tab1").setIndicator("", getResources().getDrawable(R.drawable.tab1)), WH_Tab1Fragment.class, null);
+        tab_mAdapter.addTab(tabHost.newTabSpec("tab2").setIndicator("", getResources().getDrawable(R.drawable.tab2)), WH_Tab2Fragment.class, null);
+        tab_mAdapter.addTab(tabHost.newTabSpec("tab3").setIndicator("", getResources().getDrawable(R.drawable.tab3)), WH_Tab3Fragment.class, null);
+        tab_mAdapter.addTab(tabHost.newTabSpec("tab4").setIndicator("", getResources().getDrawable(R.drawable.tab4)), WH_Tab4Fragment.class, null);
 
 
         if (savedInstanceState != null) {

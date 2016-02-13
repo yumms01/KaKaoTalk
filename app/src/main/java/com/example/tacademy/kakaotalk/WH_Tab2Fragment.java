@@ -55,6 +55,7 @@ public class WH_Tab2Fragment extends Fragment {
 //                Intent intent = new Intent(getContext(), Chatting_MainActivity.class);
 //                startActivityForResult(intent, REQUEST_CODE_OTHER);
                 Toast.makeText(getContext(), "ImageClick : " + chatting.getName(), Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(getContext(), Chatting_MainActivity.class));
             }
         });
         listView.setAdapter(mAdapter);
