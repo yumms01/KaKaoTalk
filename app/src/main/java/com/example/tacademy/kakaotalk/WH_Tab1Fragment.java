@@ -63,9 +63,9 @@ public class WH_Tab1Fragment extends Fragment {
                 if (data instanceof String) {
                     Toast.makeText(getContext(), "Header : " + (String)data, Toast.LENGTH_SHORT).show();
                 } else if (data instanceof Chatting) {
-                    Chatting c = (Chatting)data;
-                    Toast.makeText(getContext(), "name : " + c.getName(), Toast.LENGTH_SHORT).show();
-                }
+                Chatting c = (Chatting)data;
+                Toast.makeText(getContext(), "name : " + c.getName(), Toast.LENGTH_SHORT).show();
+            }
             }
         });
 

@@ -49,7 +49,7 @@ public class WH_Tab2Fragment extends Fragment {
         listView.addHeaderView(headerView, "header", false);
 
         mAdapter = new Chatting_Adapter();
-        mAdapter.setOnAdapterItemClickListener(new Chatting_Adapter.OnAdapterItemClickListener(){
+        mAdapter.setOnAdapterItemClickListener(new Chatting_Adapter.OnAdapterItemClickListener() {
             @Override
             public void onAdapterItemClickListener(Chatting_Adapter adapter, Chatting_View view, Chatting chatting, int position) {
 //                Intent intent = new Intent(getContext(), Chatting_MainActivity.class);
@@ -58,6 +58,7 @@ public class WH_Tab2Fragment extends Fragment {
 //                startActivity(new Intent(getContext(), Chatting_MainActivity.class));
             }
         });
+
         listView.setAdapter(mAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -65,9 +66,9 @@ public class WH_Tab2Fragment extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Object data = listView.getItemAtPosition(position);
                 if (data instanceof String) {
-                    Toast.makeText(getContext(), "Header : " + (String)data, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Header : " + (String) data, Toast.LENGTH_SHORT).show();
                 } else if (data instanceof Chatting) {
-                    Chatting c = (Chatting)data;
+                    Chatting c = (Chatting) data;
                     Toast.makeText(getContext(), "name : " + c.getName(), Toast.LENGTH_SHORT).show();
                 }
             }
